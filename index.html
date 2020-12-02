@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="card">
+      <div class="card__image-box">
+        <div class="card__image-box-01">
+          <img
+            class="card__image-box-1"
+            src="images/illustration-woman-online-desktop.svg"
+            alt=""
+          />
+        </div>
+        <div class="card__image-box-02">
+          <img
+            class="card__image-box-2"
+            src="/images/bg-pattern-desktop.svg "
+            alt=""
+          />
+        </div>
+        <div class="card__image-box-03">
+          <img
+            class="card__image-box-3"
+            src="/images/illustration-box-desktop.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="card__faq">
+        <h3 class="card__faq-heading">FAQ</h3>
+        <div class="card__faq-box">
+          <p class="card__faq-box-text" onclick="expand()">
+            How many team members can I invite?
+          </p>
+          <p class="card__faq-expandedtext" id="p">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </p>
+          <hr class="card__faq-hr" />
+        </div>
+
+        <div class="card__faq-box">
+          <p class="card__faq-box-text" onclick="expand1()">
+            What is the maximum file upload size?
+          </p>
+          <p class="card__faq-expandedtext" id="p1">
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </p>
+          <hr class="card__faq-hr" />
+        </div>
+
+        <div class="card__faq-box">
+          <p class="card__faq-box-text" onclick="expand2()">
+            How do I reset my password?
+          </p>
+          <p class="card__faq-expandedtext" id="p2">
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </p>
+          <hr class="card__faq-hr" />
+        </div>
+
+        <div class="card__faq-box">
+          <p class="card__faq-box-text" onclick="expand3()">
+            Can I cancel my subscription?
+          </p>
+          <p class="card__faq-expandedtext" id="p3">
+            Yes! Send us a message and we’ll process your request no questions
+            asked. Do you provide additional support? Chat and email support is
+            available 24/7. Phone lines are open during normal business hours.
+          </p>
+          <hr class="card__faq-hr" />
+        </div>
+
+        <div class="card__faq-box">
+          <p class="card__faq-box-text" onclick="expand4()">
+            Do you provide additional support?
+          </p>
+          <p class="card__faq-expandedtext" id="p4">
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+          </p>
+          <hr class="card__faq-hr" />
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function expand() {
+        var element = document.getElementById("p");
+        element.classList.toggle("card__faq-toggled");
+      }
+      function expand1() {
+        var element = document.getElementById("p1");
+        element.classList.toggle("card__faq-toggled");
+      }
+      function expand2() {
+        var element = document.getElementById("p2");
+        element.classList.toggle("card__faq-toggled");
+      }
+      function expand3() {
+        var element = document.getElementById("p3");
+        element.classList.toggle("card__faq-toggled");
+      }
+      function expand4() {
+        var element = document.getElementById("p4");
+        element.classList.toggle("card__faq-toggled");
+      }
+    </script>
+  </body>
+</html>
